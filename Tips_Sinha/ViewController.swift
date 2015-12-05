@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func onEditingChanged(sender: AnyObject) {
         var tipPercentages = [0.18, 0.2, 0.25]
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
@@ -45,8 +46,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBAction func sliderValueChanged(sender: UISlider) {
+        
         var currentValue = Int(sender.value)
         label.text = "\(currentValue)"
+        
+        //var tipPercentage = Double(currentValue / 100)
+        
+        //let billAmount = NSString(string: billField.text!).doubleValue
+        //let tip = billAmount * tipPercentage
+        //let total = billAmount + tip
+        
+        //tipLabel.text = String(format: "$%.2f", tip)
+        //totalLabel.text = String(format: "$%.2f", total)
+    
         
     }
     
