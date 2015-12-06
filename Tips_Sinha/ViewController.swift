@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var splitFour: UILabel!
+    @IBOutlet weak var splitThree: UILabel!
+    @IBOutlet weak var splitTwo: UILabel!
     
     var totalTip = 0.00
     
@@ -47,6 +50,14 @@ class ViewController: UIViewController {
         
         //tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        let splitFourways = total / 4
+        let splitThreeways = total / 3
+        let splitTwoways = total / 2
+        
+        splitFour.text = String(format: "$%.2f", splitFourways)
+        splitThree.text = String(format: "$%.2f", splitThreeways)
+        splitTwo.text = String(format: "$%.2f", splitTwoways)
     }
     
     @IBOutlet weak var slider: UISlider!
@@ -63,8 +74,18 @@ class ViewController: UIViewController {
         let tip = billAmount * totalTip
         let total = billAmount + tip
         
+        
+        
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        let splitFourways = total / 4
+        let splitThreeways = total / 3
+        let splitTwoways = total / 2
+        
+        splitFour.text = String(format: "$%.2f", splitFourways)
+        splitThree.text = String(format: "$%.2f", splitThreeways)
+        splitTwo.text = String(format: "$%.2f", splitTwoways)
         
         //var tipPercentage = Double(currentValue / 100)
         
