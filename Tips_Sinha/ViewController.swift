@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import MessageUI
+import Social
+
 
 class ViewController: UIViewController {
 
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var splitField: UITextField!
     @IBOutlet weak var splitMore: UILabel!
+   
     
     var totalTip = 0.00
     
@@ -135,6 +139,7 @@ class ViewController: UIViewController {
     }
     
     
+    
 
     
     @IBAction func sliderValueChanged(sender: UISlider) {
@@ -175,6 +180,39 @@ class ViewController: UIViewController {
     
         
     }
+    
+    @IBAction func screenshotButton(sender: AnyObject) {
+        //Create the UIImage
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        //Save it to the camera roll
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+    }
+    
+    
+    @IBAction func shareButton(sender: AnyObject) {
+        
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            facebookSheet.setInitialText("Share Via Facebook")
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        }
+        else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please login to Facebook to share", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        
+    }
+    
     
     
     

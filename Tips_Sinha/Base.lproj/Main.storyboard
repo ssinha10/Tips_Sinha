@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="txO-Vb-Mtt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-f0-q6O">
@@ -200,7 +200,7 @@
                                 <rect key="frame" x="191" y="530" width="0.0" height="0.0"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aid-Mv-DOa">
@@ -237,6 +237,29 @@
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="JVo-bE-Iae"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwa-73-lWY">
+                                <rect key="frame" x="113" y="614" width="144" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Share on Facebook">
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="screenshotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzg-Po-Fxh"/>
+                                    <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9Q-B4-sM7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfG-IQ-0X8">
+                                <rect key="frame" x="145" y="588" width="84" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Screenshot">
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="screenshotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOW-rx-I8d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -260,10 +283,13 @@
                             <constraint firstItem="l5W-7g-kZs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Uqk-Uv-gfN"/>
                             <constraint firstItem="jiY-m4-WJh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="XCQ-ke-rEN"/>
                             <constraint firstItem="Vdo-pe-BF1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="Xxw-hO-SSL"/>
+                            <constraint firstItem="Xwa-73-lWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWl-UU-BAh"/>
                             <constraint firstItem="twu-lC-nwH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ZxH-he-fXM"/>
                             <constraint firstItem="twu-lC-nwH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="agj-xf-lxa"/>
+                            <constraint firstItem="yfG-IQ-0X8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQ6-EN-oLb"/>
                             <constraint firstItem="SzO-yZ-iSZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="f2u-Tk-X7e"/>
                             <constraint firstItem="pN8-Ia-ff2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iGy-Ze-qpp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yfG-IQ-0X8" secondAttribute="trailing" constant="10" id="mVP-T0-5IY"/>
                             <constraint firstItem="pN8-Ia-ff2" firstAttribute="top" secondItem="twu-lC-nwH" secondAttribute="bottom" constant="28" id="rEf-GN-73w"/>
                             <constraint firstItem="BkV-Kv-UuE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="wqF-QT-KpB"/>
                             <constraint firstItem="gVY-sE-PW8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="xv5-Al-ugh"/>
@@ -272,6 +298,7 @@
                             <outletCollection property="gestureRecognizers" destination="L3M-PL-5Ds" appends="YES" id="czy-1R-ibp"/>
                         </connections>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="billField" destination="9lc-sm-0Ed" id="v9V-x7-6Oh"/>
                         <outlet property="label" destination="X6m-2k-Bj3" id="FyM-mm-sC6"/>
@@ -304,7 +331,7 @@
                         <viewControllerLayoutGuide type="bottom" id="DPP-So-gt5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o8i-DW-3sf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
