@@ -14,8 +14,6 @@
 		0D0829291C1289A40063A66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0829271C1289A40063A66E /* LaunchScreen.storyboard */; };
 		0D0829341C1289A40063A66E /* Tips_SinhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0829331C1289A40063A66E /* Tips_SinhaTests.swift */; };
 		0D08293F1C1289A40063A66E /* Tips_SinhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D08293E1C1289A40063A66E /* Tips_SinhaUITests.swift */; };
-		0DADC8751C13996B00859CC4 /* tipsWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DADC8741C13996B00859CC4 /* tipsWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0DADC8821C13996B00859CC4 /* tipsWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0DADC8681C13996A00859CC4 /* tipsWatch.app */; };
 		0DADC88C1C142BF700859CC4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,41 +32,15 @@
 			remoteGlobalIDString = 0D08291A1C1289A30063A66E;
 			remoteInfo = Tips_Sinha;
 		};
-		0DADC8761C13996B00859CC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0829131C1289A30063A66E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0DADC8731C13996B00859CC4;
-			remoteInfo = "tipsWatch Extension";
-		};
-		0DADC8801C13996B00859CC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0D0829131C1289A30063A66E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0DADC8671C13996A00859CC4;
-			remoteInfo = tipsWatch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0DADC8881C13996B00859CC4 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				0DADC8751C13996B00859CC4 /* tipsWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0DADC88A1C13996B00859CC4 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				0DADC8821C13996B00859CC4 /* tipsWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,8 +61,6 @@
 		0D08293A1C1289A40063A66E /* Tips_SinhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tips_SinhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D08293E1C1289A40063A66E /* Tips_SinhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_SinhaUITests.swift; sourceTree = "<group>"; };
 		0D0829401C1289A40063A66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DADC8681C13996A00859CC4 /* tipsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DADC8741C13996B00859CC4 /* tipsWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tipsWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,13 +80,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0D0829371C1289A40063A66E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DADC8711C13996B00859CC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,8 +106,6 @@
 				0D08291B1C1289A30063A66E /* Tips_Sinha.app */,
 				0D08292F1C1289A40063A66E /* Tips_SinhaTests.xctest */,
 				0D08293A1C1289A40063A66E /* Tips_SinhaUITests.xctest */,
-				0DADC8681C13996A00859CC4 /* tipsWatch.app */,
-				0DADC8741C13996B00859CC4 /* tipsWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,7 +156,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0DADC8811C13996B00859CC4 /* PBXTargetDependency */,
 			);
 			name = Tips_Sinha;
 			productName = Tips_Sinha;
@@ -238,40 +198,6 @@
 			productReference = 0D08293A1C1289A40063A66E /* Tips_SinhaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		0DADC8671C13996A00859CC4 /* tipsWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DADC8891C13996B00859CC4 /* Build configuration list for PBXNativeTarget "tipsWatch" */;
-			buildPhases = (
-				0DADC8661C13996A00859CC4 /* Resources */,
-				0DADC8881C13996B00859CC4 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0DADC8771C13996B00859CC4 /* PBXTargetDependency */,
-			);
-			name = tipsWatch;
-			productName = tipsWatch;
-			productReference = 0DADC8681C13996A00859CC4 /* tipsWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		0DADC8731C13996B00859CC4 /* tipsWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DADC8871C13996B00859CC4 /* Build configuration list for PBXNativeTarget "tipsWatch Extension" */;
-			buildPhases = (
-				0DADC8701C13996B00859CC4 /* Sources */,
-				0DADC8711C13996B00859CC4 /* Frameworks */,
-				0DADC8721C13996B00859CC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "tipsWatch Extension";
-			productName = "tipsWatch Extension";
-			productReference = 0DADC8741C13996B00859CC4 /* tipsWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -284,6 +210,7 @@
 				TargetAttributes = {
 					0D08291A1C1289A30063A66E = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = E2BACDW6X5;
 					};
 					0D08292E1C1289A40063A66E = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -292,14 +219,6 @@
 					0D0829391C1289A40063A66E = {
 						CreatedOnToolsVersion = 7.1.1;
 						TestTargetID = 0D08291A1C1289A30063A66E;
-					};
-					0DADC8671C13996A00859CC4 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = E2BACDW6X5;
-					};
-					0DADC8731C13996B00859CC4 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = E2BACDW6X5;
 					};
 				};
 			};
@@ -319,8 +238,6 @@
 				0D08291A1C1289A30063A66E /* Tips_Sinha */,
 				0D08292E1C1289A40063A66E /* Tips_SinhaTests */,
 				0D0829391C1289A40063A66E /* Tips_SinhaUITests */,
-				0DADC8671C13996A00859CC4 /* tipsWatch */,
-				0DADC8731C13996B00859CC4 /* tipsWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -344,20 +261,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0D0829381C1289A40063A66E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DADC8661C13996A00859CC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DADC8721C13996B00859CC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,13 +296,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0DADC8701C13996B00859CC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -412,16 +308,6 @@
 			isa = PBXTargetDependency;
 			target = 0D08291A1C1289A30063A66E /* Tips_Sinha */;
 			targetProxy = 0D08293B1C1289A40063A66E /* PBXContainerItemProxy */;
-		};
-		0DADC8771C13996B00859CC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0DADC8731C13996B00859CC4 /* tipsWatch Extension */;
-			targetProxy = 0DADC8761C13996B00859CC4 /* PBXContainerItemProxy */;
-		};
-		0DADC8811C13996B00859CC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0DADC8671C13996A00859CC4 /* tipsWatch */;
-			targetProxy = 0DADC8801C13996B00859CC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -530,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips_Sinha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -541,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips_Sinha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -596,76 +488,6 @@
 			};
 			name = Release;
 		};
-		0DADC8831C13996B00859CC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				IBSC_MODULE = tipsWatch_Extension;
-				INFOPLIST_FILE = tipsWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		0DADC8841C13996B00859CC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				IBSC_MODULE = tipsWatch_Extension;
-				INFOPLIST_FILE = tipsWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		0DADC8851C13996B00859CC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "tipsWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		0DADC8861C13996B00859CC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "tipsWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoy.Tips-Sinha.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -704,22 +526,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		0DADC8871C13996B00859CC4 /* Build configuration list for PBXNativeTarget "tipsWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DADC8851C13996B00859CC4 /* Debug */,
-				0DADC8861C13996B00859CC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		0DADC8891C13996B00859CC4 /* Build configuration list for PBXNativeTarget "tipsWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DADC8831C13996B00859CC4 /* Debug */,
-				0DADC8841C13996B00859CC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
