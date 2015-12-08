@@ -18,14 +18,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitFour: UILabel!
     @IBOutlet weak var splitThree: UILabel!
     @IBOutlet weak var splitTwo: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var splitField: UITextField!
+    @IBOutlet weak var splitMore: UILabel!
     
     var totalTip = 0.00
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
         
         
     }
@@ -35,9 +41,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
     @IBAction func onEditingChanged(sender: AnyObject) {
-        var tempstr = ""
-        
+
         
         
         var tipPercentages = [0.0, 0.0, 0.0]
@@ -48,7 +56,7 @@ class ViewController: UIViewController {
         let tip = billAmount * totalTip
         let total = billAmount + tip
         
-        //tipLabel.text = String(format: "$%.2f", tip)
+        tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
         
         let splitFourways = total / 4
@@ -58,10 +66,76 @@ class ViewController: UIViewController {
         splitFour.text = String(format: "$%.2f", splitFourways)
         splitThree.text = String(format: "$%.2f", splitThreeways)
         splitTwo.text = String(format: "$%.2f", splitTwoways)
+        
+        let numberEntered = NSString(string: splitField.text!).doubleValue
+        if (numberEntered <= 0){
+            splitMore.text = "N/A"
+        }
+        else {
+            var split = total / numberEntered
+            splitMore.text = String(format: "$%.2f", split)
+        }
+
+        
+        
+        
     }
     
-    @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var label: UILabel!
+    @IBAction func peopleChange(sender: AnyObject) {
+        let billAmount = NSString(string: billField.text!).doubleValue
+        let tip = billAmount * totalTip
+        let total = billAmount + tip
+        
+        //let total = NSString(string: totalLabel.text!).doubleValue
+        let numberEntered = NSString(string: splitField.text!).doubleValue
+        var split = total / numberEntered
+        if (numberEntered <= 0){
+            splitMore.text = "N/A"
+        }
+        else {
+            splitMore.text = String(format: "$%.2f", split)
+        }
+
+        
+    }
+    
+    @IBAction func onNumberChange(sender: AnyObject) {
+        let billAmount = NSString(string: billField.text!).doubleValue
+        let tip = billAmount * totalTip
+        let total = billAmount + tip
+        
+        //let total = NSString(string: totalLabel.text!).doubleValue
+        let numberEntered = NSString(string: splitField.text!).doubleValue
+        var split = total / numberEntered
+        
+        if (numberEntered <= 0){
+            splitMore.text = "N/A"
+        }
+        else {
+            splitMore.text = String(format: "$%.2f", split)
+        }
+        
+    }
+    
+    @IBAction func numberChanged(sender: AnyObject) {
+        let billAmount = NSString(string: billField.text!).doubleValue
+        let tip = billAmount * totalTip
+        let total = billAmount + tip
+        
+        //let total = NSString(string: totalLabel.text!).doubleValue
+        let numberEntered = NSString(string: splitField.text!).doubleValue
+        var split = total / numberEntered
+        if (numberEntered <= 0){
+            splitMore.text = "N/A"
+        }
+        else {
+            var split = total / numberEntered
+            splitMore.text = String(format: "$%.2f", split)
+        }
+    }
+    
+    
+
     
     @IBAction func sliderValueChanged(sender: UISlider) {
         
@@ -87,32 +161,22 @@ class ViewController: UIViewController {
         splitThree.text = String(format: "$%.2f", splitThreeways)
         splitTwo.text = String(format: "$%.2f", splitTwoways)
         
-        //var tipPercentage = Double(currentValue / 100)
+        let numberEntered = NSString(string: splitField.text!).doubleValue
+        if (numberEntered <= 0){
+            splitMore.text = "N/A"
+        }
+        else {
+            var split = total / numberEntered
+            splitMore.text = String(format: "$%.2f", split)
+        }
+
         
-        //let billAmount = NSString(string: billField.text!).doubleValue
-        //let tip = billAmount * tipPercentage
-        //let total = billAmount + tip
-        
-        //tipLabel.text = String(format: "$%.2f", tip)
-        //totalLabel.text = String(format: "$%.2f", total)
+
     
         
     }
     
     
-    
-//slider stuff
-    
-//    @IBAction func onEditingSlider(sender: AnyObject) {
-//        var tipPercentage = Int(sender.value)
-//
-//        let billAmount = NSString(string: billField.text!).doubleValue
-//        let tip = billAmount * tipPercentage
-//        let total = billAmount + tip
-//        tipLabel.text = String(format: "$%.2f", tip)
-//        totalLabel.text = String(format: "$%.2f", total)
-//
-//    }
     
 
     
