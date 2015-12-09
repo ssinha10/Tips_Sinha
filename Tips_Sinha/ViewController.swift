@@ -8,10 +8,12 @@
 
 import UIKit
 import MessageUI
-import Social
+import Social //needed for facebook integration
+
 
 
 class ViewController: UIViewController {
+
 
     
     @IBOutlet weak var tipControl: UISegmentedControl!
@@ -35,10 +37,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-        
-        
-        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,9 +49,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func onEditingChanged(sender: AnyObject) {
-
-        
-        
         var tipPercentages = [0.0, 0.0, 0.0]
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
@@ -79,29 +76,9 @@ class ViewController: UIViewController {
             var split = total / numberEntered
             splitMore.text = String(format: "$%.2f", split)
         }
-
-        
-        
-        
     }
     
-    @IBAction func peopleChange(sender: AnyObject) {
-        let billAmount = NSString(string: billField.text!).doubleValue
-        let tip = billAmount * totalTip
-        let total = billAmount + tip
-        
-        //let total = NSString(string: totalLabel.text!).doubleValue
-        let numberEntered = NSString(string: splitField.text!).doubleValue
-        var split = total / numberEntered
-        if (numberEntered <= 0){
-            splitMore.text = "N/A"
-        }
-        else {
-            splitMore.text = String(format: "$%.2f", split)
-        }
-
-        
-    }
+    
     
     @IBAction func onNumberChange(sender: AnyObject) {
         let billAmount = NSString(string: billField.text!).doubleValue
@@ -118,8 +95,9 @@ class ViewController: UIViewController {
         else {
             splitMore.text = String(format: "$%.2f", split)
         }
-        
     }
+    
+    
     
     @IBAction func numberChanged(sender: AnyObject) {
         let billAmount = NSString(string: billField.text!).doubleValue
@@ -137,8 +115,6 @@ class ViewController: UIViewController {
             splitMore.text = String(format: "$%.2f", split)
         }
     }
-    
-    
     
 
     
@@ -174,12 +150,9 @@ class ViewController: UIViewController {
             var split = total / numberEntered
             splitMore.text = String(format: "$%.2f", split)
         }
-
-        
-
-    
-        
     }
+    
+    
     
     @IBAction func screenshotButton(sender: AnyObject) {
         //Create the UIImage
@@ -192,12 +165,16 @@ class ViewController: UIViewController {
     }
     
     
+    
+    
     @IBAction func shareButton(sender: AnyObject) {
         
+        
+
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
             var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             
-            facebookSheet.setInitialText("Share Via Facebook")
+            facebookSheet.setInitialText("I just ate at <Restaurant Name> and I <feeling> it!")
             self.presentViewController(facebookSheet, animated: true, completion: nil)
             
         }
@@ -209,13 +186,10 @@ class ViewController: UIViewController {
             
             self.presentViewController(alert, animated: true, completion: nil)
         }
-        
-        
     }
     
     
-    
-    
+
 
     
     @IBAction func onTap(sender: AnyObject) {

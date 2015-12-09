@@ -203,21 +203,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aid-Mv-DOa">
-                                <rect key="frame" x="168" y="533" width="34" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="numberChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="QeA-qc-nDp"/>
-                                    <action selector="numberChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vcC-Ke-2rd"/>
-                                    <action selector="numberPeople:" destination="BYZ-38-t0r" eventType="valueChanged" id="XOz-WQ-rQk"/>
-                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fAT-5a-qNk"/>
-                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rNL-5C-ZRl"/>
-                                    <action selector="onNumberChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Xul-nA-e0o"/>
-                                    <action selector="peopleChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mji-0O-QYg"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHn-tg-LX1">
                                 <rect key="frame" x="196" y="537" width="104" height="27"/>
                                 <animations/>
@@ -238,10 +223,10 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwa-73-lWY">
-                                <rect key="frame" x="113" y="614" width="144" height="33"/>
+                                <rect key="frame" x="52" y="614" width="267" height="33"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Share on Facebook">
+                                <state key="normal" title="Share Your Experience on Facebook">
                                     <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -260,6 +245,18 @@
                                     <action selector="screenshotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOW-rx-I8d"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aid-Mv-DOa">
+                                <rect key="frame" x="168" y="533" width="34" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="numberChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="QeA-qc-nDp"/>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fAT-5a-qNk"/>
+                                    <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rNL-5C-ZRl"/>
+                                    <action selector="onNumberChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Xul-nA-e0o"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
