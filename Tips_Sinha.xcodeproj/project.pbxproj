@@ -61,7 +61,7 @@
 		0D08293A1C1289A40063A66E /* Tips_SinhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tips_SinhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D08293E1C1289A40063A66E /* Tips_SinhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_SinhaUITests.swift; sourceTree = "<group>"; };
 		0D0829401C1289A40063A66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,6 @@
 		0D0829121C1289A30063A66E = {
 			isa = PBXGroup;
 			children = (
-				0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */,
 				0D08291D1C1289A30063A66E /* Tips_Sinha */,
 				0D0829321C1289A40063A66E /* Tips_SinhaTests */,
 				0D08293D1C1289A40063A66E /* Tips_SinhaUITests */,
@@ -118,6 +117,7 @@
 				0D0829221C1289A30063A66E /* Main.storyboard */,
 				0D0829251C1289A40063A66E /* Assets.xcassets */,
 				0D0829271C1289A40063A66E /* LaunchScreen.storyboard */,
+				0DADC88B1C142BF700859CC4 /* SettingsViewController.swift */,
 				0D08292A1C1289A40063A66E /* Info.plist */,
 			);
 			path = Tips_Sinha;
