@@ -11,7 +11,7 @@ Time spent: **5** hours spent in total
 The following **required** functionality is complete:
 
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [-] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
       This is not required in my application because the user can select any tip percentage he/she wishes.
 The following **optional** features are implemented:
 * [ ] UI animations
@@ -21,7 +21,6 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] List anything else that you can get done to improve the app functionality!
 - [x] Added Tip Slider to select the tip percentage rather than hard coding the values
 - [x] Split the bill option that has a quick view for upto 4 people
 - [x] Split the bill effectively for n people
